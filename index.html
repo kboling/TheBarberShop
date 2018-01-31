@@ -199,18 +199,54 @@
       </div>
     </section> -->
 
+    <!-- Google Reviews -->
+    <div id="google-reviews"></div>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA4KNDJAmGCSRiyyJGeDm_G4kefDWTwx6g&signed_in=true&libraries=places"></script>
+
+    <script>
+    jQuery(document).ready(function( $ ) {
+       $("#google-reviews").googlePlaces({
+            placeId: 'ChIJF5v6VW3vrIkR4doWpcccPyA' //Find placeID @: https://developers.google.com/places/place-id
+          , render: ['reviews']
+          , min_rating: 4
+          , max_rows:4
+       });
+    });
+    </script>
+
+
     <!-- Map -->
     <section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.963566400408!2d-78.89668778531026!3d35.89890798014402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acef6d55fa9b17%3A0x203f1cc7a516dae1!2sUnity+%26+Respect+Barber+Styling!5e0!3m2!1sen!2sus!4v1517345825575"></iframe>
       <br/>
       <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.963566400408!2d-78.89668778531026!3d35.89890798014402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acef6d55fa9b17%3A0x203f1cc7a516dae1!2sUnity+%26+Respect+Barber+Styling!5e0!3m2!1sen!2sus!4v1517345825575"></a>
       </small>
     </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Set Up Appointment</h2>
+            <p class="mb-5"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>(919) 544-7961</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa icon-clock fa-3x mb-3 sr-contact"></i>
+            <p>Tues - Fri 8a - 6p, Sat 8a - 2p, Sun - Mon Closed</p>
+          </div>
+        </div>
+        <!-- Social Links
         <ul class="list-inline mb-5">
           <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/Unity-Respect-Barber-Styling-Durham-NC-240972941396/">
@@ -218,16 +254,17 @@
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="#">
-              <i class="icon-social-twitter"></i>
+            <a class="social-link rounded-circle text-white mr-3" href="">
+              <i class="icon-phone"></i>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="#">
-              <i class="icon-social-instagram"></i>
+            <a class="social-link rounded-circle text-white mr-3" href="">
+              <i class="icon-clock"></i>
             </a>
           </li>
-        </ul>
+        </ul> -->
+        <hr>
         <p class="text-muted small mb-0">Copyright &copy; The Barber Shop 2017</p>
       </div>
     </footer>
